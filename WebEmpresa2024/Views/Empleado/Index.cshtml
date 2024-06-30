@@ -1,0 +1,95 @@
+﻿@model IEnumerable<CapaDatosWebEmpresa.Models.Empleado> //Recibe una lista de empleados
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Empleados</h1>
+
+<p>
+    <a asp-action="Nuevo">Nuevo Empleado</a> 
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.FechaNacimiento)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.FechaContratación)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Dirección)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ciudad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.País)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelDomicilio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) { //Imprimiendo los datos mediante el bucle
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaContratación)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.Dirección)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ciudad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.País)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelDomicilio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foto)
+            </td> *@
+            <td>
+                <a asp-action="Editar" asp-route-id="@item.IdEmpleado">Editar</a> |
+                <a asp-action="Detalle" asp-route-id="@item.IdEmpleado">Detalles</a> |
+                <a asp-action="Eliminar" asp-route-id="@item.IdEmpleado">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
