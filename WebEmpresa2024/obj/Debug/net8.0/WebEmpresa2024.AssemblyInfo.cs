@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebEmpresa2024")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c850e16cb0ed988f2d5366bfdae10d789fa4ff6")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebEmpresa2024")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebEmpresa2024")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

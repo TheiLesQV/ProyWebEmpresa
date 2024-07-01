@@ -1,0 +1,64 @@
+﻿@model CapaDatosWebEmpresa.Modelos.PedidoModel
+
+@{
+    ViewData["Title"] = "listarPedido_by_filtro";
+}
+
+<h1>Filtro</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="listarPedido_by_filtro">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+            <div class="form-group">
+                <label  class="control-label"> Fecha Inicio</label>
+                <input  class="form-control" id="fechInicial"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Fecha Final</label>
+                <input class="form-control" id="fechFinal" />
+            </div>
+            
+            <div class="form-group">
+                <input type="button" value="BUSCAR" class="btn btn-primary" id="btnMostrar"/>
+            </div>
+        </form>
+    </div>
+</div>
+<div >
+    <div id ="pvPedido">
+
+    </div>
+</div>
+
+@* <div>
+    <a asp-action="Index">Back to List</a>
+</div> *@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script src="~/js/scripts.js" asp-append-version="true"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery/dist/jquery.js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $("#btnMostrar").click(function () {
+            //Capturando los valores para los parametros de la consulta
+            var fi = $("#fechInicial").val();
+            var ff = $("#fechFinal").val();
+            //invocar a la accion para cargar la vista parcial
+            //Limpiar zona de carga datos
+            $("#pvPedido").empty();
+            var url = "@Url.Action("ListarPedido_by", "Pedido")";
+            var data = { fechInicial: fi,fechFinal:ff};
+            //Ejecutar la accion mediante una peticion get
+            $.get(url, data).done(function (result) {
+                $("#pvPedido").append(result);
+            })
+        });
+    });
+</script>

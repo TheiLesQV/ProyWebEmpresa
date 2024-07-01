@@ -1,0 +1,89 @@
+﻿@model IEnumerable<CapaDatosWebEmpresa.Models.Producto>
+
+@{
+    ViewData["Title"] = "ListarProducto_Categoria_sqlCon";
+}
+
+<h1>ListarProducto_Categoria</h1>
+
+@* <p>
+    <a asp-action="Create">Create New</a>
+</p> *@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantidadPorUnidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioUnidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnidadesEnExistencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnidadesEnPedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NivelNuevoPedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Suspendido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCategoríaNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProveedorNavigation)
+            </th>
+            @* <th></th> *@
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantidadPorUnidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioUnidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnidadesEnExistencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnidadesEnPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NivelNuevoPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Suspendido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCategoríaNavigation.NombreCategoría)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProveedorNavigation.NombreCompañía)
+            </td>
+            @* <td>
+                <a asp-action="Edit" asp-route-id="@item.IdProducto">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdProducto">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdProducto">Delete</a>
+            </td> *@
+        </tr>
+}
+    </tbody>
+</table>

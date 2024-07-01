@@ -7,6 +7,7 @@ F:\Curso C#\MODULO 3\clase1\WebEmpresa2024\CapaDatosWebEmpresa\obj\Debug\net8.0\
 F:\Curso C#\MODULO 3\clase1\WebEmpresa2024\CapaDatosWebEmpresa\obj\Debug\net8.0\CapaDatosWebEmpresa.AssemblyInfoInputs.cache
 F:\Curso C#\MODULO 3\clase1\WebEmpresa2024\CapaDatosWebEmpresa\obj\Debug\net8.0\CapaDatosWebEmpresa.AssemblyInfo.cs
 F:\Curso C#\MODULO 3\clase1\WebEmpresa2024\CapaDatosWebEmpresa\obj\Debug\net8.0\CapaDatosWebEmpresa.csproj.CoreCompileInputs.cache
+F:\Curso C#\MODULO 3\clase1\WebEmpresa2024\CapaDatosWebEmpresa\obj\Debug\net8.0\CapaDatosWebEmpresa.sourcelink.json
 F:\Curso C#\MODULO 3\clase1\WebEmpresa2024\CapaDatosWebEmpresa\obj\Debug\net8.0\CapaDatosWebEmpresa.dll
 F:\Curso C#\MODULO 3\clase1\WebEmpresa2024\CapaDatosWebEmpresa\obj\Debug\net8.0\refint\CapaDatosWebEmpresa.dll
 F:\Curso C#\MODULO 3\clase1\WebEmpresa2024\CapaDatosWebEmpresa\obj\Debug\net8.0\CapaDatosWebEmpresa.pdb

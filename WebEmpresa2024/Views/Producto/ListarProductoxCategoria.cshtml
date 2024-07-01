@@ -1,0 +1,97 @@
+﻿@model IEnumerable<CapaDatosWebEmpresa.Models.Producto>
+
+@{
+    ViewData["Title"] = "ListarProductoxCategoria";
+}
+
+@* <h1>ListarProducto por Categoria</h1> *@
+
+@* <p>
+    <a asp-action="Create">Create New</a>
+</p> *@
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        Tabla Productos por Categoría
+    </div>
+    <div class="card-body">
+        <table class="table" id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NombreProducto)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CantidadPorUnidad)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PrecioUnidad)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UnidadesEnExistencia)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UnidadesEnPedido)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NivelNuevoPedido)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Suspendido)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Foto)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IdCategoríaNavigation)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IdProveedorNavigation)
+                    </th>
+                   @*  <th></th> *@
+                </tr>
+            </thead>
+            <tbody>
+        @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreProducto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CantidadPorUnidad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PrecioUnidad)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnidadesEnExistencia)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnidadesEnPedido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NivelNuevoPedido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Suspendido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Foto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdCategoríaNavigation.NombreCategoría)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdProveedorNavigation.NombreCompañía)
+                    </td>
+                    @* <td>
+                        <a asp-action="Editar" asp-route-id="@item.IdProducto">Editar</a> |
+                        <a asp-action="Detalle" asp-route-id="@item.IdProducto">Detalle</a> |
+                        <a asp-action="Eliminar" asp-route-id="@item.IdProducto">Eliminar</a>
+                    </td> *@
+                </tr>
+        }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -74,6 +74,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Curso C\#/MODULO 3/clase1/WebEmpresa2024/WebEmpresa2024/Views/Pedido/ListarPedido_by.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXExpc3RhclBlZGlkb19ieS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Curso C\#/MODULO 3/clase1/WebEmpresa2024/WebEmpresa2024/Views/Pedido/listarPedido_by_filtro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXGxpc3RhclBlZGlkb19ieV9maWx0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Curso C\#/MODULO 3/clase1/WebEmpresa2024/WebEmpresa2024/Views/Pedido/ListarPedido_ClientexAnio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXExpc3RhclBlZGlkb19DbGllbnRleEFuaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Curso C\#/MODULO 3/clase1/WebEmpresa2024/WebEmpresa2024/Views/Pedido/ListarPedido_ClientexAnio_filtro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXExpc3RhclBlZGlkb19DbGllbnRleEFuaW9fZmlsdHJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Curso C\#/MODULO 3/clase1/WebEmpresa2024/WebEmpresa2024/Views/Producto/ListarProductoxCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTGlzdGFyUHJvZHVjdG94Q2F0ZWdvcmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Curso C\#/MODULO 3/clase1/WebEmpresa2024/WebEmpresa2024/Views/Producto/ListarProducto_Categoria_sqlCon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTGlzdGFyUHJvZHVjdG9fQ2F0ZWdvcmlhX3NxbENvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Curso C\#/MODULO 3/clase1/WebEmpresa2024/WebEmpresa2024/Views/Producto/ListarProducto_Categ_by.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTGlzdGFyUHJvZHVjdG9fQ2F0ZWdfYnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Curso C\#/MODULO 3/clase1/WebEmpresa2024/WebEmpresa2024/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
